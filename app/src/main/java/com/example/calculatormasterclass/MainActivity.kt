@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     private var lastNummeric: Boolean = true
     private var pressedOperator: String? = null
     private var operation: TextView? = null
-asdasds as dasdas
+sdfsdfsd dsf
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
