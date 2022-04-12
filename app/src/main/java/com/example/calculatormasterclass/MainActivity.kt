@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var newNumber: EditText
     private val displayOrientation: TextView by lazy(LazyThreadSafetyMode.NONE) { findViewById(R.id.operation) }
 
+    private val ovo = "proba"
+
     private var lastNummeric: Boolean = true
     private var pressedOperator: String? = null
     private var operation: TextView? = null
