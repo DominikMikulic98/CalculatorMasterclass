@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     private var pressedOperator: String? = null
     private var operation: TextView? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -75,7 +76,7 @@ class MainActivity : AppCompatActivity() {
             if (result.text.isEmpty())
                 result.setText(newNumber.text.toString())
             pressedOperator = (it as Button).text.toString()
-            operation?.setText(it.text.toString())
+            operation?.setText((it as Button).text.toString())
             lastNummeric = false
             newNumber.text.clear()
         }
@@ -89,7 +90,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun performOperation() {
-        var finalResult= 0.0
+        var finalResult: Double = 0.0
         if (result.text.isEmpty())
             finalResult = newNumber.text.toString().toDouble()
         else {
